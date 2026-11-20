@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-title">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5</p>
+    <h1>Leonida Ledger</h1>
+    <p class="sub">Every one of the 55 trophies, with a guide to each, a checklist that remembers, and a road to the platinum.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <p class="big-count"><span id="earnedCount">0</span><span class="of"> / 55</span></p>
+    <div class="bar" role="progressbar" aria-label="Trophies earned"><div class="bar-fill" id="barFill"></div></div>
+    <p class="grade-line" id="gradeLine"></p>
+    <p class="meta-line">1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze &middot; 0 online &middot; 1 possibly missable</p>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Guide sections">
+  <button type="button" class="tab active" data-view="checklist" role="tab" aria-selected="true">Checklist</button>
+  <button type="button" class="tab" data-view="roadmap" role="tab" aria-selected="false">Roadmap to Platinum</button>
+  <button type="button" class="tab" data-view="missables" role="tab" aria-selected="false">Missables</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="toolbar">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or keyword&hellip;" autocomplete="off"></label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="side">Side quests</option>
+          <option value="robbery">Robberies</option>
+          <option value="exploration">Exploration</option>
+          <option value="misc">Feats &amp; misc</option>
+          <option value="completion">Completion</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+      <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+      <span class="spacer"></span>
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    </div>
+    <p class="result-line" id="resultLine"></p>
+    <ul class="trophy-list" id="trophyList"></ul>
+    <p class="sources-note">Names, descriptions and grades as PlayStation publishes them, verified against <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a> and <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a>. Guides are this guide&rsquo;s own words; each names its sources. Full source list sits beside every trophy&rsquo;s guide.</p>
+  </section>
+
+  <section id="view-roadmap" class="view hidden">
+    <div class="roadmap-intro">
+      <p><strong>About 200 hours to the platinum, one playthrough, difficulty 4 out of 10</strong> (PowerPyx). No mission gold medals, no mission replay, no online trophies. Keep cheats off — they disable trophies and saving. The game has 15 manual save slots plus one autosave: keep a save at the start and end of each chapter.</p>
+    </div>
+    <ol class="stages">
+      <li class="stage">
+        <h2><span class="stage-no">1</span> Play the story — Chapters 1 to 5, about 60&ndash;80 hours</h2>
+        <p>Just finish the story and enjoy it. The 12 story trophies pop as you go and cannot be missed. Do the side questlines as they appear — Kenton in Chapter 1, Billy and Bret in Chapter 2, Andy, Randy and Tyrone in Chapter 3 — and scan every new vehicle with the WAiNK app and study animals through the binoculars as you meet them; that progress already counts toward the 100% checklist even though you cannot see it yet.</p>
+        <p class="stage-trophies"><strong>On the way:</strong> 12 story trophies, plus the first steps of the side questlines and the vehicle and animal counts.</p>
+        <p class="stage-warn">&#9888; The one thing to do in Chapter 1: after the mission Down to Earth, talk to Lucia in the kitchen in the morning, follow her to the balcony and accept when she offers to meditate. See Missables.</p>
+      </li>
+      <li class="stage">
+        <h2><span class="stage-no">2</span> The 100% checklist — after the story, about 100 hours</h2>
+        <p>Once the story ends, the checklist appears under Progress &gt; Stats &gt; 100% Completion. It is far more forgiving than it sounds — closer to 60% of true completion. Most side quests are not needed at all, and most collectibles only partly. The only things that need everything are robberies, underwater discoveries, shooting ranges, drone races and Bret&rsquo;s quests. You need 70 of the 80 challenges, so skip the hardest ten.</p>
+        <p class="stage-trophies"><strong>On the way:</strong> A Long Road (gold), Cunning Stunts (300 of 397), The Shootist (42 gold medals), Top Fun (14 locations), Maximum Withdrawal (8 vaults), Pest Control (39 gang operations), Whip It Good (200 scanned vehicles), One Last Thing (70 challenges).</p>
+      </li>
+      <li class="stage">
+        <h2><span class="stage-no">3</span> Cleanup — about 10 hours</h2>
+        <p>Whatever is left: the 8 stranger strands, any side questlines you skipped, the money trophies (Dime on the Dollar, Treat Yo Self, Little Boxes), and the one-off feats — the UFO easter egg, the tank, the plane at VCIA, the Banshee showroom smash, the bowling alley valuables. The platinum pops the moment the last of the other 54 is earned.</p>
+        <p class="stage-trophies"><strong>On the way:</strong> Strangers &amp; Freaks, Fair Game, the remaining robbery and feat trophies, then Vice Got a Price!</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="view-missables" class="view hidden">
+    <div class="missable-intro">
+      <p><strong>Only one trophy is possibly missable.</strong> Every story trophy pops by playing the story, every side questline stays available after the story in free-roam, and nothing on the 100% checklist can be missed. Quest givers who go quiet mid-story (Kenton, for one) all come back.</p>
+    </div>
+    <ul class="trophy-list" id="missableList"></ul>
+    <div class="safety">
+      <h2>Stay safe</h2>
+      <ul>
+        <li><strong>Cheats disable trophies and saving.</strong> Leave them off for the whole run.</li>
+        <li><strong>Keep chapter saves.</strong> With no mission replay, a save at the start and end of each chapter (10 of your 15 manual slots) is your only way back.</li>
+        <li><strong>Optional missions vanish over time</strong> (black icons with pink letters) — but there are far more than the 100 the checklist asks for, so missing some costs nothing.</li>
+        <li><strong>Some fences disappear permanently</strong>, and a few magazine collectibles sit in story buildings that close — neither affects any trophy, since new fences unlock and the magazines spawn elsewhere too.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Ledger — an unofficial, open guide. Not affiliated with Rockstar Games or PlayStation. Trophy names and descriptions are PlayStation&rsquo;s; all guide text is this guide&rsquo;s own. Works fully offline: nothing on this page fetches over the network.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
